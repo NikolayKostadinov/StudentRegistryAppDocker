@@ -3,6 +3,6 @@ services:
   app:
     image: nikihattan/studentapp:latest
     ports:
-      - "3000:3030" # Map port 3030 on the host to port 3030 in the container
+      - "3000:3000" # Map port 3030 on the host to port 3030 in the container
     environment:
       - NODE_ENV=production
