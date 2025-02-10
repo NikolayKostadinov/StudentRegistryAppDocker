@@ -3,12 +3,12 @@ pipeline {
 	stages {
 		stage('Install NPM packages') {
 			steps {
-				bat npm install
+				bat 'npm install'
 			}
 		}
 	stage('Run UI tests') {
 			steps {
-				bat npm run test
+				bat 'npm run test'
 			}
 		}
 	}
